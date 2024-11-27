@@ -55,8 +55,8 @@ Linea_Sepolia contract address = 0x342b41E0F99fb95F1667BC634Ca0872709e6d4b2
 
 - Deployed Contract: https://sepolia.lineascan.build/address/0x342b41E0F99fb95F1667BC634Ca0872709e6d4b2
 - Youtube video: https://youtu.be/DrqK19pH5q4
-- Live dApp: https://lets-fund.vercel.app/
-- Github Repo: https://github.com/holyaustin/LetsFund
+- Live dApp: https://letsfundcharity.vercel.app/
+- Github Repo: https://github.com/holyaustin/LetsFundcharity
 
 ## 📚 Key Technologies
 

@@ -5,7 +5,6 @@ import { CharityStruct, SupportStruct } from '@/utils/type.dt'
 import { useDispatch } from 'react-redux'
 import { globalActions } from '@/store/globalSlices'
 import { useAccount } from 'wagmi'
-
 // @ts-ignore
 import ShareLink from 'react-twitter-share-link'
 
@@ -44,7 +43,7 @@ const Payment: React.FC<ComponentProp> = ({ charity, supports, owner }) => {
         <span className="text-gray-600">{charity.donations} donations</span>
       </div>
 
-      <div className="flex flex-col space-y-2 font-semibold">
+      <div className="flex flex-col space-y-2 font-semibold"> 
 
       <ShareLink link={'https://letsfundcharity.vercel.app/donations/' + charity.id} 
               text=" 🌟 Imagine a world where every child has access to education! You can help make this a reality. Even a small contribution to our charity project can ignite dreams and change lives. Join us in creating a brighter future! ✨" 

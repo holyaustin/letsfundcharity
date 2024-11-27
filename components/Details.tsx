@@ -3,10 +3,11 @@ import { MdCheckCircle } from 'react-icons/md'
 import Donation from './Donation'
 import { CharityStruct, SupportStruct } from '@/utils/type.dt'
 import Image from 'next/image'
-
 import { useDispatch } from 'react-redux'
 import { globalActions } from '@/store/globalSlices'
 import { useAccount } from 'wagmi'
+// @ts-ignore
+import ShareLink from 'react-twitter-share-link'
 
 interface ComponentProp {
   charity: CharityStruct
@@ -52,13 +53,21 @@ const Details: React.FC<ComponentProp> = ({ charity, supports }) => {
         >
           Donate
         </button>
-        <button
-          className="border border-gray-300 py-3 px-20 rounded-lg
-          transition-all duration-300 ease-in-out
-         hover:bg-gray-100"
-        >
-          Share
-        </button>
+        <ShareLink link={'https://letsfundcharity.vercel.app/donations/' + charity.id} 
+              text=" 🌟 Imagine a world where every child has access to education! You can help make this a reality. Even a small contribution to our charity project can ignite dreams and change lives. Join us in creating a brighter future! ✨" 
+              hashtags="Linea MakeADifference">
+              {(link: string | undefined) => (
+                
+                <button
+                className="border border-gray-300 py-3 px-20 rounded-lg
+                transition-all duration-300 ease-in-out
+               hover:bg-gray-100"
+              > 
+
+                  <a href={link} target="_blank" rel="noreferrer">Share</a></button>
+                  )}
+            
+        </ShareLink>
       </div>
 
       <hr className="border-t border-gray-300" />
