@@ -21,7 +21,7 @@ const Payment: React.FC<ComponentProp> = ({ charity, supports, owner }) => {
 
   return (
     <div
-      className="w-full md:w-1/3 shadow-lg shadow-gray-300 p-
+      className="w-full md:w-1/3 shadow-lg shadow-gray-300 p-4
     rounded-xl space-y-4 max-h-[46rem] overflow-hidden"
     >
       <div className="font-light">
